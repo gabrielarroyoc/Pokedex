@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>PokeDex</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/pokedex.css" />
+    <link rel="stylesheet" href="./css/pokemon.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
@@ -12,9 +14,10 @@
   <body>
     <div class="container">
       <h1>Pokedex</h1>
-      <ul data-js="pokedex" class="pokedex"></ul>
+      <ul data-js="pokedex" id="pokedex"></ul>
+      <button>load more</button>
     </div>
 
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,92 @@
+.pokemon {
+  background: #252525;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon img {
+  width: 100%;
+  height: auto;
+}
+
+.pokemon.grass {
+  background: #9bcc50a8;
+}
+
+.pokemon.poison {
+  background: #b97fc9a8;
+}
+
+.pokemon.psychic {
+  background: #f366b9a8;
+}
+
+.pokemon.ice {
+  background: #51c4e7a8;
+}
+
+.pokemon.fire {
+  background: #fd7d24a8;
+}
+
+.pokemon.water {
+  background: #4592c4a8;
+}
+
+.pokemon.electric {
+  background: #dabd06a8;
+}
+
+.pokemon.bug {
+  background: #729f40a8;
+}
+
+.pokemon.rock {
+  background: #a38d21a8;
+}
+
+.pokemon.steel {
+  background: #648283a8;
+}
+
+.pokemon.ground {
+  background: linear-gradient(
+    to bottom,
+    #a38d21a8 50%,
+    rgba(95, 95, 95, 0.685) 50%
+  );
+}
+
+.pokemon.dragon {
+  background: linear-gradient(to bottom, #53a4cfa8 50%, #f16e57a8 50%);
+}
+
+.pokemon.ghost {
+  background: #623aaa81;
+}
+
+.pokemon.dark {
+  background: #0f0f0f;
+}
+
+.pokemon.flying {
+  background: linear-gradient(
+    to bottom,
+    #3dc7efa8 50%,
+    rgba(95, 95, 95, 0.685) 50%
+  );
+}
+
+.pokemon.fighting {
+  background: #a04208a8;
+}
+
+.pokemon.fairy {
+  background: #fdb9e9a8;
+}
+
+.pokemon:hover {
+  filter: brightness(0.9);
+}

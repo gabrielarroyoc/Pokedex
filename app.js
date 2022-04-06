@@ -14,11 +14,15 @@ const fetchData = async () => {
   pokemons.forEach((pokemon) => {
     const {
       sprites: { other },
+      types,
     } = pokemon;
+
+    const type = types[0].type.name;
 
     const pokemonImg = other["official-artwork"].front_default;
 
     div = document.createElement("div");
+    div.setAttribute("class", `pokemon ${type}`);
     div.innerHTML = `
      <img src="${pokemonImg}" alt="${pokemon.name}" loading="lazy"/>
       <h2>${pokemon.name}</h2>
@@ -28,7 +32,7 @@ const fetchData = async () => {
       <p>${pokemon.weight}</p>
     `;
 
-    document.body.appendChild(div);
+    document.getElementById("pokedex").appendChild(div);
   });
 };
 
