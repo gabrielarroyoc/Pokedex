@@ -13,42 +13,42 @@
 
 .pokemon.grass {
   background: #9bcc50a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.poison {
   background: #b97fc9a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.psychic {
   background: #f366b9a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.ice {
   background: #51c4e7a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.fire {
   background: #fd7d24a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.water {
   background: #4592c4a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.electric {
   background: #dabd06a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.bug {
   background: #729f40a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.rock {
@@ -57,7 +57,7 @@
 
 .pokemon.steel {
   background: #648283a8;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pokemon.ground {

@@ -11,6 +11,15 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+button{
+  background:0;
+  transition: all 0.3s ease 0s;
+}
+
+a{
+  width: 180px
+}
+
 h1 {
   text-align: center;
   font-size: 54px;
@@ -25,4 +34,8 @@ header {
   align-items: center;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
+}
+
+ul{
+  list-style: none;
 }

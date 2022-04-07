@@ -25,11 +25,11 @@ const fetchData = async () => {
     div.setAttribute("class", `pokemon ${type}`);
     div.innerHTML = `
      <img src="${pokemonImg}" alt="${pokemon.name}" loading="lazy"/>
-      <h2>${pokemon.name}</h2>
-      <p>${pokemon.id}</p>
-      <p>${pokemon.types.map((type) => type.type.name).join(", ")}</p>
-      <p>${pokemon.height}</p>
-      <p>${pokemon.weight}</p>
+      <button>${pokemon.name}</button>
+      <button>${pokemon.id}</button>
+      <button>${pokemon.types.map((type) => type.type.name).join(", ")}</button>
+      <button>${pokemon.height}</button>
+      <button>${pokemon.weight}</button>
     `;
 
     document.getElementById("pokedex").appendChild(div);
