@@ -1,14 +1,9 @@
 body {
-  background: linear-gradient(
-    92.88deg,
-    rgb(32, 32, 32) 9.16%,
-    rgb(27, 27, 27) 43.89%,
-    rgb(22, 22, 22) 64.72%
-  );
-  color: white;
-  margin: 0;
-  font-family: --apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+background: rgb(151, 151, 151);
+color: white;
+margin: 0;
+font-family: --apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .title{
@@ -23,49 +18,55 @@ font-weight: 800;
 letter-spacing: 2px;
 }
 
-
+.busque{
+display:flex;
+align-items:center;
+justify-content:center;
+margin:2rem;
+flex-direction:column;
+}
   
-  .btn {
-  position: absolute;
-  top: 60%;
-  left: 7%;
-  text-align: center;
-  padding: 17px 40px;
-  border-radius: 50px;
-  border: 0;
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all .5s ease;
-  }
+.btn {
+position: absolute;
+top: 60%;
+left: 7%;
+text-align: center;
+padding: 17px 40px;
+border-radius: 50px;
+border: 0;
+background-color: white;
+box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+font-size: 15px;
+transition: all .5s ease;
+}
    
-  .btn:hover {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
-   }
+.btn:hover {
+letter-spacing: 3px;
+background-color: hsl(261deg 80% 48%);
+color: hsl(0, 0%, 100%);
+box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
    
-  .btn:active {
-  letter-spacing: 1,5px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) px px 0px 0px;
-  transform: translateY(5px);
-  transition: 70ms;
-   }
+.btn:active {
+letter-spacing: 1,5px;
+background-color: hsl(261deg 80% 48%);
+color: hsl(0, 0%, 100%);
+box-shadow: rgb(93 24 220) px px 0px 0px;
+transform: translateY(5px);
+transition: 70ms;
+}
 
 nav{
-  display: flex-end;
-  padding-right: 20px;
+display: flex-end;
+padding-right: 20px;
 }
 
 header ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
+display: flex;
+justify-content: flex-end;
+list-style: none;
 }
 
 header li {
@@ -78,11 +79,11 @@ text-align: -webkit-match-parent;
 }
 
 ul{
-  margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
 }
 
 p {
@@ -90,45 +91,43 @@ cursor: pointer;
 }
 
 button{
-  background:0;
-  transition: all 0.3s ease 0s;
+background:0;
+transition: all 0.3s ease 0s;
 }
 
 a{
-  width: 180px
+width: 180px
 }
 
 .logo {
-  width: 100px;
-  cursor:pointer; 
+width: 100px;
+cursor:pointer; 
 }
 
-
-
 button{
-  cursor:pointer; 
+cursor:pointer; 
 }
 
 img {
-  width: 160px;
+width: 160px;
 }
 
 .logo{
-  padding-left: 80px;
-  margin-right: auto;
+padding-left: 80px;
+margin-right: auto;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  position: fixed;
-  z-index: 3;
+display: flex;
+align-items: center;
+background: rgba(0, 0, 0, 0.4);
+width: 100%;
+position: fixed;
+z-index: 3;
 }
 
 ul{
-  list-style: none;
+list-style: none;
 }
 
 .banner_wrapper{
@@ -143,4 +142,9 @@ z-index: 1;
 filter: brightness(90%);
 }
 
-
+.load-more{
+outline:none;
+padding:1rem;
+border:none;
+background-color:peru
+}

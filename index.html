@@ -26,16 +26,29 @@
     </header>
      
 <img class="banner_wrapper" src="./119152.jpg"></img>
-    </div>
-    <h1 class="title">Who is that Pokémon?
-    </h1>
-    <button class="btn">we show you!</button>
-    <div class="container">
-      <h1>p</h1>
-      <ul data-js="pokedex" id="pokedex"></ul>
-      <button>load more</button>
+    
+    <h1 class="title">Who is that Pokémon?</h1>
+
+    <div class="busque" >
+      <button id="load-more" onClick="loadMore()" style="outline:none;padding:1rem;border:none;background-color:peru">Load More</button>
+
+      <input type="text" id="search" name="search">Busque porra</input>
+      <button id="search-by-name" onClick="searchPokemonByName()">Procurar</button>
     </div>
 
+
+    
+
+    <button class="btn" >we show you!</button>
+    
+    <div class="container">
+      <h1>p</h1>
+      
+      <ul data-js="pokedex" id="pokedex"></ul>
+
+      
+    
+    </div>
     <script src="./app.js" defer></script>
   </body>
 </html>
