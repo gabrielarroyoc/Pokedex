@@ -11,6 +11,80 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.title{
+position: absolute;
+top: 50%;
+left: 23%;
+transform: translate(-50%, -50%);
+font-size: 50px;
+color:#fff;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 2px;
+}
+
+
+  
+  .btn {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  text-align: center;
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+  }
+   
+  .btn:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+   }
+   
+  .btn:active {
+  letter-spacing: 1,5px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) px px 0px 0px;
+  transform: translateY(5px);
+  transition: 70ms;
+   }
+
+nav{
+  display: flex-end;
+  padding-right: 20px;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+header li {
+font-size: 20px;
+list-style-type: none;
+cursor: pointer;
+padding: 0px 20px;
+list-style: none;
+text-align: -webkit-match-parent;
+}
+
+ul{
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 p {
 cursor: pointer;
 }
@@ -24,15 +98,12 @@ a{
   width: 180px
 }
 
-h1 {
-  text-align: center;
-  font-size: 54px;
-}
-
 .logo {
   width: 100px;
   cursor:pointer; 
 }
+
+
 
 button{
   cursor:pointer; 
@@ -43,7 +114,8 @@ img {
 }
 
 .logo{
-  padding-left: 80px
+  padding-left: 80px;
+  margin-right: auto;
 }
 
 header {
