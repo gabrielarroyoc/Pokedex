@@ -1,9 +1,37 @@
-const fetchData = async () => {
-  const GetPokemonURL = (id) => `https://pokeapi.co/api/v2/pokemon/${id}/`;
+let totalPokemons = 1;
 
+const GetPokemonURL = (value) => `https://pokeapi.co/api/v2/pokemon/${value}/`;
+const PokemonRender = (pokemon, isLast = true) => {
+  const {
+    sprites: { other },
+    types,
+  } = pokemon;
+
+  const type = types[0].type.name;
+
+  const pokemonImg = other["official-artwork"].front_default;
+
+  div = document.createElement("div");
+  div.setAttribute("class", `pokemon ${type}`);
+  div.innerHTML = `
+   <img src="${pokemonImg}" alt="${pokemon.name}" loading="lazy"/>
+   <p>${pokemon.id}</p>
+   <p>${pokemon.name}</p>
+    <p>${pokemon.types.map((type) => type.type.name).join(", ")}</p>
+    <p>${pokemon.height}</p>
+    <p>${pokemon.weight}</p>
+  `;
+
+  if (isLast) {
+    document.getElementById("pokedex").appendChild(div);
+  } else {
+    document.getElementById("pokedex").prepend(div);
+  }
+};
+
+const getPokemons = async (offset, limit) => {
   const pokemonsPromises = [];
-
-  for (let i = 1; i <= 500; i++) {
+  for (let i = offset; i <= limit; i++) {
     const pokemon = fetch(GetPokemonURL(i)).then((res) => res.json());
 
     pokemonsPromises.push(pokemon);
@@ -11,29 +39,35 @@ const fetchData = async () => {
 
   const pokemons = await Promise.all(pokemonsPromises);
 
-  pokemons.forEach((pokemon) => {
-    const {
-      sprites: { other },
-      types,
-    } = pokemon;
-
-    const type = types[0].type.name;
-
-    const pokemonImg = other["official-artwork"].front_default;
-
-    div = document.createElement("div");
-    div.setAttribute("class", `pokemon ${type}`);
-    div.innerHTML = `
-     <img src="${pokemonImg}" alt="${pokemon.name}" loading="lazy"/>
-      <p>${pokemon.name}</p>
-      <p>${pokemon.id}</p>
-      <p>${pokemon.types.map((type) => type.type.name).join(", ")}</p>
-      <p>${pokemon.height}</p>
-      <p>${pokemon.weight}</p>
-    `;
-
-    document.getElementById("pokedex").appendChild(div);
-  });
+  return pokemons;
 };
 
-fetchData();
+const fetchInitialPokemon = async () => {
+  const pokemons = await getPokemons(1, 20);
+  pokemons.forEach(PokemonRender);
+  total = pokemons.length;
+  console.log(pokemons);
+};
+
+const loadMore = async () => {
+  const pokemons = await getPokemons(totalPokemons, totalPokemons + 20);
+  console.log(pokemons);
+
+  pokemons.forEach(PokemonRender);
+  totalPokemons += 20;
+};
+
+const searchPokemonByName = async () => {
+  const value = document.querySelector("input").value.toLowerCase();
+  try {
+    const response = await fetch(
+      `https://pokeapi.co/api/v2/pokemon/${value}`
+    ).then((res) => res.json());
+    PokemonRender(response, false);
+    console.log(response);
+  } catch (error) {
+    alert("Pokemon não encontrado!");
+  }
+};
+
+fetchInitialPokemon();

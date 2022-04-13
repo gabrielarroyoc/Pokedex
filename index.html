@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/pokedex.css" />
     <link rel="stylesheet" href="./css/pokemon.css" />
+    <link rel="stylesheet" href="./css/search-bar.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
@@ -13,9 +14,7 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html">
-        <img src="./dale.png "></i>
-        </a>  
+      <a class="logo" href="./index.html"> <img src="./dale.png" alt="" /> </a>
       <nav>
         <ul>
           <li></li>
@@ -26,14 +25,24 @@
       </nav>
     </header>
     <div>
-<video autoplay loop class="banner_wrapper" src="./hero_image.mp4"></video>
+      <video
+        autoplay
+        loop
+        class="banner_wrapper"
+        src="./hero_image.mp4"
+      ></video>
+    </div>
+    <div class="busque">
+      <input type="text" id="search" name="search" />
+      <button id="search-by-name" onClick="searchPokemonByName()">
+        Procurar
+      </button>
     </div>
     <div class="container">
-      <h1>p</h1>
+      <h1>Pokemon</h1>
       <ul data-js="pokedex" id="pokedex"></ul>
-      <button>load more</button>
+      <button id="loadMore" onClick="loadMore()">load more</button>
     </div>
-
     <script src="./app.js" defer></script>
   </body>
 </html>
