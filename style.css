@@ -1,5 +1,6 @@
 body {
-background: rgb(151, 151, 151);
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,9,121,1) 35%, rgba(59,0,255,1) 100%);
 color: white;
 margin: 0;
 font-family: --apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -26,10 +27,10 @@ margin:2rem;
 flex-direction:column;
 }
   
-.btn {
+.btn-search {
 position: absolute;
 top: 60%;
-left: 7%;
+left: 23%;
 text-align: center;
 padding: 17px 40px;
 border-radius: 50px;
@@ -40,16 +41,17 @@ letter-spacing: 1.5px;
 text-transform: uppercase;
 font-size: 15px;
 transition: all .5s ease;
+cursor: pointer;
 }
    
-.btn:hover {
+.btn-search:hover {
 letter-spacing: 3px;
 background-color: hsl(261deg 80% 48%);
 color: hsl(0, 0%, 100%);
 box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
    
-.btn:active {
+.btn-search:active {
 letter-spacing: 1,5px;
 background-color: hsl(261deg 80% 48%);
 color: hsl(0, 0%, 100%);
@@ -99,22 +101,12 @@ a{
 width: 180px
 }
 
-.logo {
-width: 100px;
+.logo img {
+width: 50%;
+height: 50%;
 cursor:pointer; 
-}
-
-button{
-cursor:pointer; 
-}
-
-img {
-width: 160px;
-}
-
-.logo{
-padding-left: 80px;
-margin-right: auto;
+margin-left: 5em;
+margin-top: 1em;
 }
 
 header {
@@ -131,15 +123,14 @@ list-style: none;
 }
 
 .banner_wrapper{
-margin-top: 0;
-width: 100%;
-height: 90vh;
+margin-top: 7em;
+width: 90vh;
+height: 85vh;
 object-fit: cover;
-object-position: center;
-padding: 0;
-margin: 0;
+object-position: right;
+padding-left: 900px;
+
 z-index: 1;
-filter: brightness(90%);
 }
 
 .load-more{
@@ -147,4 +138,17 @@ outline:none;
 padding:1rem;
 border:none;
 background-color:peru
+}
+
+.input-field{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: left;
+    padding: 17px 40px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 0.9rem;
+    width: 15rem;
+    font-weight: 600;
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/pokedex.css" />
     <link rel="stylesheet" href="./css/pokemon.css" />
+    <link rel="stylesheet" href="./css/search-bar.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
@@ -14,40 +15,35 @@
   <body>
     <header>
       <a class="logo" href="./index.html">
-        <img src="./dale.png "></i>
-        </a>  
+        <img src="./giphy.gif" alt="" />
+      </a>
       <nav>
         <ul>
           <li>HOME</li>
           <li>ABOUT US</li>
-          <button class="btn-search">SEARCH</button>
         </ul>
       </nav>
     </header>
-     
-<img class="banner_wrapper" src="./119152.jpg"></img>
-    
-    <h1 class="title">Who is that Pokémon?</h1>
-
-    <div class="busque" >
-      <button id="load-more" onClick="loadMore()" style="outline:none;padding:1rem;border:none;background-color:peru">Load More</button>
-
-      <input type="text" id="search" name="search">Busque porra</input>
-      <button id="search-by-name" onClick="searchPokemonByName()">Procurar</button>
+    <div>
+      <img class="banner_wrapper" src="./gengar-pokemon.gif" alt="" />
     </div>
-
-
-    
-
-    <button class="btn" >we show you!</button>
-    
+    <div class="busque">
+      <input class="input-field" type="text" id="search" name="search" />
+      <button
+        class="btn-search"
+        id="search-by-name"
+        onClick="searchPokemonByName()"
+      >
+        Procurar
+      </button>
+    </div>
+    <img src="./dale.png" alt="" />
+    <h1 class="title">Who is that Pokémon?</h1>
     <div class="container">
-      <h1>p</h1>
-      
       <ul data-js="pokedex" id="pokedex"></ul>
-
-      
-    
+      <button class="btn-loadmore" id="loadMore" onClick="loadMore()">
+        load more
+      </button>
     </div>
     <script src="./app.js" defer></script>
   </body>
