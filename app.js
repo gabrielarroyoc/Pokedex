@@ -21,7 +21,7 @@ const PokemonRender = (pokemon, isLast = true) => {
     pokemon.name
   }" loading="lazy"/>
    </div>
-   <div class="contentBx">
+   <div class="content">
    <p>${pokemon.id}</p>
    <p>${pokemon.name}</p>
     <p>${pokemon.types.map((type) => type.type.name).join(", ")}</p>

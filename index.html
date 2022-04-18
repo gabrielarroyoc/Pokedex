@@ -2,42 +2,61 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>PokeDex</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/pokedex.css" />
     <link rel="stylesheet" href="./css/pokemon.css" />
     <link rel="stylesheet" href="./css/search-bar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://css.gg/search.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="shortcut icon"
+      href="./pokemon_go_play_game_cinema_film_movie_icon-icons.com_69163.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <title>Pokedex | Home</title>
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html">
-        <img src="./giphy.gif" alt="" />
-      </a>
+      <a class="logo" href="./index.html"
+        ><img src="./giphy.gif" alt="logo"
+      /></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
       <nav>
-        <ul>
-          <li>HOME</li>
-          <li>ABOUT US</li>
+        <ul class="nav-list">
+          <li><a href="./"></a></li>
+          <li><a href="./">HOME</a></li>
+          <li><a href="./">POKEDEX</a></li>
+          <li><a href="./">ABOUT US</a></li>
         </ul>
       </nav>
     </header>
-    <div>
+    <script src="./mobile-navbar.js"></script>
       <img class="banner_wrapper" src="./gengar-pokemon.gif" alt="" />
     </div>
     <div class="busque">
-      <input class="input-field" type="text" id="search" name="search" />
-      <button
-        class="btn-search"
-        id="search-by-name"
-        onClick="searchPokemonByName()"
-      >
-        Procurar
-      </button>
+      <form>
+        <input class="input-field" type="text" id="search" name="search" />
+        <button
+          href="#container"
+          type="submit"
+          class="btn-search"
+          id="search-by-name"
+          onClick="searchPokemonByName()"
+        >
+          Search
+        </button>
+      </form>
     </div>
-    <img src="./dale.png" alt="" />
+    <img class="hero-image" src="./dale.png" alt="" />
     <h1 class="title">Who is that Pokémon?</h1>
     <div class="container">
       <ul data-js="pokedex" id="pokedex"></ul>
