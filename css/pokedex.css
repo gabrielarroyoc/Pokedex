@@ -1,9 +1,6 @@
 #pokedex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  max-width: 978px;
-  margin: 0 auto;
-  border-radius: 30%;
-  cursor:pointer; 
+  gap: 2rem;
+  padding: 8rem;
 }

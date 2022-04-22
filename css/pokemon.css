@@ -1,32 +1,25 @@
 .pokemon {
-  background: rgb(41, 41, 41);
-  background: linear-gradient(
-    90deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(24, 24, 24, 1) 33%,
-    rgba(24, 24, 24, 1) 72%,
-    rgba(41, 41, 41, 1) 100%
-  );
-  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 18px;
-  border: 1px solid rgba(0, 0, 255, 0.2);
-  cursor: pointer;
-  transition: all 0.2s;
-  text-align: center;
-  background-position: center;
-  height: 300px;
+  padding: 1rem;
+  position: relative;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out 0s;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content p {
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .imgPokemon {
   width: 40%;
-  height: 100%;
-  cursor: pointer;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-size: cover;
+  margin-top: -2.5rem;
+  z-index: 10;
 }
 
 .pokemon.grass {
@@ -213,8 +206,4 @@
 
 .pokemon:hover {
   filter: brightness(0.9);
-}
-
-.container {
-  position: relative;
 }
