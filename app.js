@@ -16,18 +16,17 @@ const PokemonRender = (pokemon, isLast = true) => {
   div.innerHTML = `
   <div class="container">
   <div class="card">
-    <div class="imgBx">
-    <p>#${pokemon.id}</p>
-    <p>${pokemon.name}</p>
-   <img class="imgPokemon" src="${pokemonImg}" alt="${
+  <div class="content">
+  <p>#${pokemon.id}</p>
+  <p>${pokemon.name}</p>
+  <div class="types">
+  <p>${pokemon.types.map((type) => type.type.name).join(", ")}</p>
+  <div class="size">
+  </div>
+  <a href="#">Ver Mais</a>
+  <img class="imgPokemon" src="${pokemonImg}" alt="${
     pokemon.name
   }" loading="lazy"/>
-   </div>
-   <div class="texto">
-    <p>${pokemon.types.map((type) => type.type.name).join(", ")}</p>
-    <div class="size">
-    </div>
-      <a href="#">Ver Mais</a>
     </div>
     </div>
     </div>
