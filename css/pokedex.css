@@ -5,5 +5,11 @@
   max-width: 978px;
   margin: 0 auto;
   border-radius: 30%;
-  cursor:pointer; 
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  #pokedex {
+    grid-template-columns: 1fr;
+  }
 }
