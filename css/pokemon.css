@@ -6,23 +6,60 @@
   transition: all 0.2s ease-in-out 0s;
 }
 
+.container {
+  display: flex;
+  position: relative;
+}
+
 .types {
   display: flex;
   position: relative;
-  padding: 0;
-  margin-top: -1.5rem;
+  padding-right: 2rem;
+  margin-top: -6.5rem;
+}
+
+.size {
+  display: flex;
+  position: relative;
 }
 
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  position: relative;
 }
 
 .imgPokemon {
   width: 40%;
+  z-index: 0;
   margin-top: -2.5rem;
-  z-index: 10;
+  margin-left: 20rem;
+}
+
+.pokemon h4 {
+  margin-top: 7rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.pokemon.normal {
+  background: rgb(178, 179, 176);
+  background: linear-gradient(
+    90deg,
+    rgb(164, 165, 163) 0%,
+    rgb(156, 156, 155) 30%,
+    rgb(155, 156, 155) 69%,
+    rgb(150, 150, 149) 100%
+  );
+  border-radius: 18px;
+  cursor: pointer;
 }
 
 .pokemon.grass {
@@ -114,10 +151,10 @@
   background: rgb(174, 199, 79);
   background: linear-gradient(
     90deg,
-    rgba(174, 199, 79, 1) 0%,
-    rgba(148, 176, 44, 1) 30%,
-    rgba(148, 176, 44, 1) 70%,
-    rgba(179, 203, 91, 1) 100%
+    rgb(185, 206, 110) 0%,
+    rgb(171, 198, 75) 30%,
+    rgb(168, 195, 69) 70%,
+    rgb(191, 214, 106) 100%
   );
   border-radius: 18px;
 }
@@ -131,6 +168,7 @@
     rgba(116, 88, 21, 1) 70%,
     rgba(154, 127, 62, 1) 100%
   );
+  border-radius: 18px;
 }
 
 .pokemon.steel {
@@ -151,6 +189,7 @@
     #a38d21a8 50%,
     rgba(95, 95, 95, 0.685) 50%
   );
+  border-radius: 18px;
 }
 
 .pokemon.dragon {
@@ -167,6 +206,7 @@
     rgba(97, 51, 149, 1) 70%,
     rgba(144, 104, 190, 1) 100%
   );
+  border-radius: 18px;
 }
 
 .pokemon.dark {

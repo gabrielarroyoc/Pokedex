@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 8rem;
+  padding: 5rem;
   background-image: url(../download.png);
-  padding-top: -20rem;
 }

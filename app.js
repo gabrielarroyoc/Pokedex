@@ -15,21 +15,21 @@ const PokemonRender = (pokemon, isLast = true) => {
   div.setAttribute("class", `pokemon ${type}`);
   div.innerHTML = `
   <div class="container">
-  <div class="card">
-  <div class="content">
-  <p>#${pokemon.id}</p>
-  <p>${pokemon.name}</p>
-  <div class="types">
-  <p>${pokemon.types.map((type) => type.type.name).join(", ")}</p>
-  <div class="size">
-  </div>
-  <a href="#">Ver Mais</a>
-  <img class="imgPokemon" src="${pokemonImg}" alt="${
+    <div class="card">
+      <div class="content">
+        <p>#${pokemon.id}</p>
+        <h1>${pokemon.name}</h1>
+      <div class="types">
+        <h4>${pokemon.types.map((type) => type.type.name).join(", ")}</h4>
+      <div class="size">
+        <img class="imgPokemon" src="${pokemonImg}" alt="${
     pokemon.name
   }" loading="lazy"/>
+      </div>
+      </div>
+      </div>
     </div>
-    </div>
-    </div>
+  </div>
   `;
 
   if (isLast) {

@@ -3,6 +3,7 @@
   <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/pokedex.css" />
     <link rel="stylesheet" href="./css/pokemon.css" />
@@ -41,11 +42,8 @@
       </nav>
     </header>
     <script src="./mobile-navbar.js"></script>
-  </div>
   <div class="banner_wrapper">
-</div>
-    <div class="busque">
-      <form>
+      <form class="SearchInput">
         <input class="input-field" type="text" id="search" name="search" />
         <button
           type="submit"
@@ -56,8 +54,9 @@
           Search
         </button>
       </form>
-    </div>
-    <img class="hero-image" src="./dale.png" alt="" />
+    </div class="images-hero">
+    <img class="hero-image1" src="./dale.png" alt="" />
+    <img class="hero-image2" src="" alt="">
     <h1 class="title">Who is that Pokémon?</h1>
     <div class="container">
       <ul data-js="pokedex" id="pokedex"></ul>

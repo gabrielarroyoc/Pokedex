@@ -1,26 +1,7 @@
-/*Global///////////////////*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #c62525;
-  color: white;
-  margin: 0;
-  font-family: "Space Grotesk", sans-serif;
-}
-
-/*Main///////////////////*/
-video {
-  object-fit: contain;
-}
-
 .title {
   position: absolute;
   top: 30rem;
-  left: 24.3rem;
-  transform: translate(-50%, -50%);
+  left: 5.3rem;
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
@@ -36,7 +17,7 @@ video {
   flex-direction: column;
 }
 
-form {
+.SearchInput {
   color: #555;
   display: flex;
   padding: 2px;
@@ -57,6 +38,11 @@ input[type="search"] {
 
 input[type="search"]::placeholder {
   color: #bbb;
+}
+
+images-hero {
+  display: flex;
+  flex-direction: row;
 }
 
 .btn-search {
@@ -93,30 +79,37 @@ input[type="search"]::placeholder {
   transition: 70ms;
 }
 
-.gg-search {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  transform: scale(var(--ggs, 1));
-  width: 16px;
-  height: 16px;
-  border: 2px solid;
-  border-radius: 100%;
-  margin-left: -4px;
-  margin-top: -4px;
+.btn-loadmore {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  color: #24252a;
 }
-.gg-search::after {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  border-radius: 3px;
-  width: 2px;
-  height: 8px;
-  background: currentColor;
-  transform: rotate(-45deg);
-  top: 10px;
-  left: 12px;
+
+.btn-loadmore:hover {
+  letter-spacing: 0.188rem;
+  background-color: rgb(16, 2, 41);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(16, 2, 41) 0px 7px 29px 0px;
+}
+
+.btn-loadmore:active {
+  letter-spacing: 1, 5px;
+  background-color: rgb(16, 2, 41);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(16, 2, 41) px px 0px 0px;
+  transform: translateY(5px);
+  transition: 70ms;
 }
 
 nav {
@@ -195,11 +188,19 @@ ul {
   background-color: peru;
 }
 
-.hero-image {
+.hero-image1 {
   position: absolute;
   top: 21rem;
   left: 4rem;
   width: 200px;
+}
+
+.hero-image2 {
+  position: absolute;
+  top: 18rem;
+  left: 70rem;
+  width: 600px;
+  transform: rotate(10deg);
 }
 
 .input-field {
@@ -230,8 +231,6 @@ ul {
   background: white;
   border-radius: 10px;
 }
-
-/*MediaQuery///////////////////*/
 
 @media (max-width: 800px) {
   body {
